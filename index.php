@@ -3,6 +3,7 @@
 // lapu 
 require "functions.php";
 require "Database.php";
+require "views/index.view.php";
 
 
 $config = require("config.php");
@@ -30,4 +31,3 @@ $posts = $db
           ->execute($query, $params)
           ->fetchAll();
 
-require "index.view.php";
